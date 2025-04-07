@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-preto: #111111;
+  --color-cinza: #1c1c1c;
+  --color-branco: #f1f1f1;
+  --color-azul: #4fa3f7;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
