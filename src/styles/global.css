@@ -3,8 +3,8 @@
 @theme {
   --color-preto: #111111;
   --color-cinza: #1c1c1c;
-  --color-branco: #f1f1f1;
-  --color-azul: #4fa3f7;
+  --color-branco-opaco: #f1f1f180;
+  --color-azul: #4fa3f780;
 }
 
 body {

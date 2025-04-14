@@ -1,41 +1,43 @@
 import Header from "./components/Header"
 import BtnLinks from "./components/BtnLinks"
 import { 
-  FaFacebook, 
   FaInstagram, 
   FaTiktok, 
   FaWhatsapp,
-} from "react-icons/fa6";
+} from "react-icons/fa6"
+import { BiLogoGmail } from "react-icons/bi"
+import logo from "./assets/papele-logo.png"
+import bgImage from "./assets/bg.jpg" 
 
 function App() {
   return (
     <>
-      <div className="flex flex-col justify-start items-center py-16 px-8 bg-preto min-h-screen">
+      <div className="flex flex-col justify-start items-center py-16 md:py-10 lg:py-12 px-12 md:px-12 lg:px-8 min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
         <Header 
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7jp8So34X9gzuuG1uVySZdWWZtj3Rbq7dQ&s"
-          title="Nome da empresa"
-          subTitle="SubTitulo da empresa"
+          image={logo}
+          title="Papelê"
+          subTitle="Faça sua encomenda"
         />
         <div className="flex flex-col justify-center items-center gap-4 mt-8">
           <BtnLinks 
-            title="WhatsApp" 
-            link="https://www.whatsapp.com"
-            icon={FaWhatsapp}
-          />
-          <BtnLinks 
-            title="Facebook" 
-            link="https://www.facebook.com"
-            icon={FaFacebook}
-          />
-          <BtnLinks 
             title="Instagram" 
-            link="https://www.instagram.com"
+            link="https://www.instagram.com/personalizados_papele"
             icon={FaInstagram}
           />
           <BtnLinks 
             title="TikTok" 
-            link="https://www.tiktok.com"
+            link="https://www.tiktok.com/@personalizados_papele"
             icon={FaTiktok}
+          />
+          <BtnLinks 
+            title="WhatsApp" 
+            link="https://wa.me/5585986471925"
+            icon={FaWhatsapp}
+          />
+          <BtnLinks 
+            title="E-mail" 
+            link="mailto:personalizado.papele@gmail.com"
+            icon={BiLogoGmail}
           />
         </div>
       </div>

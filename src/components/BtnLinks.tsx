@@ -14,7 +14,7 @@ const BtnLinks = ({
   return ( 
     <>
       <button 
-        className="flex justify-center items-center w-140 h-16 rounded-lg bg-cinza text-branco cursor-pointer hover:bg-azul hover:text-cinza transition duration-300 ease-in-out"
+        className="flex justify-center items-center w-90 md:w-140 h-14 md:h-16 rounded-lg bg-transparent border-2 border-preto text-preto cursor-pointer hover:bg-branco-opaco transition duration-300 ease-in-out"
         onClick={() => window.open(link, "_blank")}
       >
         <Icon 
